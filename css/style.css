@@ -1815,7 +1815,7 @@ ul {
     display: flex;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     padding: 15px;
     top: -100vh;
     left: 0;
