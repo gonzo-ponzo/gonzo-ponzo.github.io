@@ -55,12 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const Burger = document.querySelector('.burger__menu');
   document.querySelector('.burger__button-1').addEventListener('click', function() {
     Burger.classList.add('burger__menu--active');
+    document.querySelector('body').classList.add('overflow--hidden');
   });
   document.querySelector('.burger__button-2').addEventListener('click', function() {
     Burger.classList.add('burger__menu--active');
+    document.querySelector('body').classList.add('overflow--hidden');
   });
   document.querySelector('.header__close').addEventListener('click', function() {
     Burger.classList.remove('burger__menu--active');
+    document.querySelector('body').classList.remove('overflow--hidden');
+
   });
 
 
@@ -390,5 +394,14 @@ document.addEventListener('DOMContentLoaded', function() {
     myMap.geoObjects
         .add(myPlacemark);
   });
+
+  var oldWidth = window.innerWidth;
+  window.onresize = function () {
+    var newWidth = window.innerWidth;
+    if (newWidth != oldWidth) {
+      eventSwiper.reInit()
+      oldWidth = newWidth;
+    }
+  };
   
 });
