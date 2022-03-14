@@ -1599,7 +1599,7 @@ ul {
 
 .projects__swiper-button-prev.swiper-button-disabled,
 .projects__swiper-button-next.swiper-button-disabled {
-  opacity: 0;
+  opacity: 1;
 }
 
 .projects__swiper-button-prev::after {
@@ -1978,18 +1978,6 @@ ul {
 }
 
 @media (max-width: 1199px) {
-  /* body { 
-    overflow: -moz-scrollbars-none; 
-  }
-
-  body { 
-    -ms-overflow-style: none; 
-  }
-
-  body::-webkit-scrollbar { 
-    width: 0 !important 
-  } */
-
   .container {
     max-width: 924px;
   }

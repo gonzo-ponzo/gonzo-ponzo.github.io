@@ -204,6 +204,10 @@ document.addEventListener('DOMContentLoaded', function() {
       lastSlideMessage: 'Последний слайд'
     },
 
+    pagination: {
+      el: ".events__swiper-pagination",
+    },
+
     keyboard: {
       enabled: true,
       onlyInViewport: true
@@ -216,9 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
         grid: {
           rows: 1,
         },
-        pagination: {
-          el: ".events__swiper-pagination",
-        },
+
       },
       600: {
         slidesPerView: 2,
@@ -227,9 +229,6 @@ document.addEventListener('DOMContentLoaded', function() {
         grid: {
           rows: 1,
         },
-        pagination: {
-          el: ".events__swiper-pagination",
-        },
       },
       960: {
         slidesPerView: 3,
@@ -237,9 +236,6 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerGroup: 3,
         grid: {
           rows: 1,
-        },
-        pagination: {
-          el: ".events__swiper-pagination",
         },
       },
       1200: {
